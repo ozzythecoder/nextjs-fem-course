@@ -15,7 +15,7 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  email     String @unique
+  email     String    @unique
   firstName String
   lastName  String
   password  String
@@ -52,8 +52,9 @@ model Task {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  name   String
-  status TASK_STATUS @default(NOT_STARTED)
+  name        String
+  description String?
+  status      TASK_STATUS @default(NOT_STARTED)
 
   ownerId String
   owner   User   @relation(fields: [ownerId], references: [id])
