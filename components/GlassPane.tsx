@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 interface Props {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }
 
 const GlassPane = ({ children, className }: Props) => {
