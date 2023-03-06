@@ -12,9 +12,7 @@ const Card = ({ className, children }: Props) => {
         "rounded-3xl px-10 py-4 drop-shadow-xl bg-white",
         className
       )}
-    >
-      {children}
-    </div>
+    >{children}</div>
   );
 };
 
